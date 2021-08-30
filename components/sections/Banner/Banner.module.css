@@ -1,0 +1,138 @@
+.Banner {
+  background-image: url('../../../public/home-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 7rem 2.5rem;
+}
+
+.CTAButtonContainer {
+  margin-top: 20px;
+}
+
+.CTAButton {
+  background-color: #fff;
+  border-color: #fff;
+  color: #484747;
+  font-weight: 800;
+}
+
+.CTAButton:hover {
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
+  color: #484747;
+}
+
+.CTAButton::after {
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
+  color: #484747;
+}
+
+.BottomBanner {
+  padding: 0 20rem 1rem;
+}
+
+.FeaturedLogo {
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  .Banner {
+    height: 1200px;
+    padding: 7rem 6rem;
+  }
+  .TopBanner {
+    margin-bottom: 330px;
+  }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .Banner {
+    height: 900px;
+    padding: 7rem 2rem;
+  }
+  .TopBanner {
+    margin-bottom: 100px;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .Banner {
+    height: 600px;
+    padding: 5rem 2rem 1rem;
+  }
+  .BottomBanner {
+    padding: 0 1rem 1rem;
+  }
+  .TopBanner {
+    margin-bottom: 60px;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Banner {
+    height: 800px;
+    padding: 1rem 2rem 5rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .Banner {
+    height: 700px;
+    padding: 5rem 1rem 1rem;
+    background-image: url('../../../public/home-banner-mobile.png');
+  }
+  .BottomBanner {
+    padding: 0 1rem 1rem;
+  }
+  .TopBanner {
+    margin-bottom: 100px;
+  }
+  
+}

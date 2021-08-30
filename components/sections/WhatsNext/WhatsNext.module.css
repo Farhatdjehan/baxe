@@ -1,0 +1,32 @@
+.BannerContainer {
+  background-image: url('../../../public/what_next.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  min-height: 400px;
+}
+
+.GradientContainer {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.8), rgba(0,0,0,1));
+  min-height: 400px;
+  padding: 7rem 2.5rem;
+}
+
+.ContentContainer {
+  background-color: black;
+  min-height: 400px;
+  padding: 7rem 2.5rem;
+}
+
+.Title {
+  position: relative;
+  top: -112px;
+  min-height: 200px;
+  width: 100%;
+  background-image: linear-gradient(to bottom left, #008779, #47BA98);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

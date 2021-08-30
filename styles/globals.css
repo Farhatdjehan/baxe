@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, a {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+}
+
+h1 { font-size: 60px; }
+h2 { font-size: 55px; }
+h3 { font-size: 40px; }
+h4 { font-size: 36px; }
+h5 { font-size: 30px; }
+h6 { font-size: 25px; }
+
+ul {
+  padding-left: 0 !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 1.5rem 2.5rem !important;
+}
+
+.container-fluid {
+  padding: 0 !important;
+  background-color: none !important;
+}
+
+.jumbotron {
+  background-color: none !important;
+}
+
+.btn {
+  border-radius: 3rem;
+  padding: 10px 50px;
+}
+
+.baxe-container {
+  padding: 0rem 2.5rem;
+}
+
+.footer-container {
+  /* background-image: url('../public/footer-bg.png'); */
+  background-image: linear-gradient(to bottom right, #008779, #47BA98);
+  background-color: #fff;
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  /* background-color: transparent !important; */
+  border-radius: 0 !important;
+  padding: 5rem 2.5rem 0;
+  height: 500px;
+}
+
+.footer-bottom {
+  padding: 2rem 2.5rem;
+  background-color: #606868;
+}
+
+.contact-text {
+  display: block;
+}
+
+.contact-text-mobile {
+  display: none;
+}
+
+.MenuContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.MenuCol {
+  position: absolute;
+  background-color: #181822;
+  width: 467px;
+  height: 553px;
+  right: 0;
+  padding: 20px 10px;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .navbar {
+    padding: 0.5rem 6rem !important;
+  }
+  .embed-responsive {
+    width: 640px !important;
+  }
+  .banner-divider {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .embed-responsive {
+    width: 640px !important;
+  }
+  .banner-divider {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+  
+  h1 { font-size: 40px; }
+  h2 { font-size: 35px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 25px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
+
+  .navbar {
+    padding: 0.5rem 2rem !important;
+  }
+
+  .footer-container {
+    padding: 2.5rem 2.5rem 0;
+    height: 550px;
+  }
+
+  .footer-bottom {
+    padding: 2rem 2.5rem;
+    height: 770px;
+  }
+
+  .contact-text {
+    display: none;
+  }
+
+  .contact-text-mobile {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .embed-responsive {
+    width: 640px !important;
+  }
+  .banner-divider {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  .embed-responsive {
+    width: 640px !important;
+  }
+  .banner-divider {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  .embed-responsive {
+    top: 25% !important;
+  }
+  .embed-responsive {
+    height: 200px !important;
+  }
+  .banner-divider {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  p {
+    font-size: 16px;
+  }
+  
+  h1 { font-size: 40px; }
+  h2 { font-size: 35px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 25px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
+
+  .navbar {
+    padding: 0.5rem 1rem !important;
+  }
+  .footer-container {
+    padding: 2.5rem 1rem 0;
+    height: 650px;
+  }
+  .footer-bottom {
+    padding: 2rem 1rem;
+    height: 900px;
+  }
+  .embed-responsive {
+    height: 200px !important;
+  }
+  .banner-divider {
+    display: none;
+  }
+  .MenuCol {
+    position: absolute;
+    background-color: #181822;
+    width: 100%;
+    height: 633px;
+    right: 0;
+    padding: 20px 10px;
+  }
+}

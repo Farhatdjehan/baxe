@@ -1,0 +1,103 @@
+.WhatIsBaxeContainer {
+  padding: 0rem 2.5rem;
+  position: relative;
+  top: -100px;
+  min-height: 200px;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .WhatIsBaxeDesktop {
+    display: block;
+  }
+  .WhatIsBaxeMobile {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .WhatIsBaxeContainer {
+    padding: 0rem 2.5rem;
+    top: -5rem;
+  }
+  .WhatIsBaxeDesktop {
+    display: block;
+  }
+  .WhatIsBaxeMobile {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .WhatIsBaxeContainer {
+    padding: 0rem 2.5rem;
+    top: -3rem;
+  }
+  .WhatIsBaxeDesktop {
+    display: block;
+  }
+  .WhatIsBaxeMobile {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .WhatIsBaxeDesktop {
+    display: block;
+  }
+  .WhatIsBaxeMobile {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  .WhatIsBaxeDesktop {
+    display: none;
+  }
+  .WhatIsBaxeMobile {
+    display: block;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .WhatIsBaxeContainer {
+    top: -30px;
+  }
+  .WhatIsBaxeDesktop {
+    display: none;
+  }
+  .WhatIsBaxeMobile {
+    display: block;
+  }
+}
