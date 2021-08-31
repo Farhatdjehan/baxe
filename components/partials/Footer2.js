@@ -47,8 +47,8 @@ const Footer2 = () => {
           <Menu
             title="About"
             menus={[
-              { link: '/what-is-baxe', menu: 'What is BAXE?' },
-              { link: '/why-use-baxe', menu: 'Why use BAXE?' },
+              { link: '/about', menu: 'What is BAXE?' },
+              { link: '/about', menu: 'Why use BAXE?' },
               { link: '#', menu: 'Our Team' },
               { link: '/our-partners', menu: 'Our Partners' }
             ]}
